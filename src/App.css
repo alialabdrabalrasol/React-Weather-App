@@ -1,38 +1,42 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 100vh;
+  background-color: #343d4b;
+  color: #1a1e23;
 }
 
-.App-link {
-  color: #61dafb;
+#main-card {
+  width: 300px;
+  height: 400px;
+  background-color: #6e79d3;
+  border-radius: 25px;
+  box-sizing: border-box perspective(1500px) rotateY(10deg);
+  background-image: url("https://i.pinimg.com/originals/c7/de/f4/c7def42cf691a9bd359c6a1a218d1f54.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 3px solid #fff;
+  opacity: 0.8;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#main-card:hover {
+  box-sizing: border-box perspective(1500px) rotateY(10deg);
+  transform: scale(1.1) perspective(1500px) rotateY(10deg);
+}
+.display-1 {
+  font-size: 5rem;
+  font-weight: bold;
+  text-align: center;
+}
+.card-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+.input-group .form-control {
+  border-radius: 25px;
+  border: 1px solid #fff;
+}
+.btn {
+  border-radius: 0 25px 25px 0;
 }
